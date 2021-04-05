@@ -1,78 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="formulario.css">
-    <title>ChurrasJeff</title>
-</head>
-<body>
-    <section class="painel">
-        <div class="cabecalho">
-            <h1>Orçar Evento</h1>
-        </div>
-        <form class="formulario">
-            <div class="user-details" id="content">
-                <div class="cliente">
-                    <div class="nome" id="grupo_nome">
-                        <label for="nome"><strong>Nome</strong></label>
-                        <input type="text" placeholder="Seu nome" required>
-                    </div>
-
-                    <div class="nome" id="grupo_email">
-                        <label for="email"><strong>Email</strong></label>
-                        <input type="email" placeholder="Seu email" required>
-                    </div>
-                </div>
-
-                <div class="local">
-                    <div class="endereco" id="grupo_endereco">
-                        <label for="endereco"><strong>Endereço</strong></label>
-                        <input type="text" placeholder="Seu endereço" required>
-                    </div>
-
-                    <div class="endereco" id="grupo_cidade">
-                        <label for="cidade"><strong>Cidade</strong></label>
-                        <input type="text" placeholder="Sua cidade" required>
-                    </div>
-                </div>
-
-                <div class="contatos">
-                    <div class="evento" id="grupo_CEP">
-                        <label for="cep"><strong>CEP</strong></label>
-                        <input type="text" placeholder="Seu CEP" required>
-                    </div>
-
-                    <div class="evento" id="grupo_numero">
-                        <label for="numero"><strong>Número</strong></label>
-                        <input type="text" placeholder="Número da residência" required>
-                    </div>
-
-                    <div class="evento" id="grupo_telefone">
-                        <label for="telefone"><strong>Telefone</strong></label>
-                        <input type="text" placeholder="Telefone para contato" required>
-                    </div>
-
-                    <div class="evento" id="grupo_data">
-                        <label for="data"><strong>Data</strong></label>
-                        <input type="date" placeholder="Data" required>
-                    </div>
-
-                    <div class="evento" id="grupo_horario">
-                        <label for="horario"><strong>Horário</strong></label>
-                        <input type="time" placeholder="Hora" required>
-                    </div>
-                </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" type="text/css" href="formulario.css" />
+        <title>ChurrasJeff</title>
+    </head>
+    <body>
+        <section class="painel">
+            <div class="cabecalho">
+                <h1>Orçar Evento</h1>
             </div>
+            <form class="formulario">
+                <div class="user-details" id="content">
+                    <div class="cliente">
+                        <div class="nome" id="grupo_nome">
+                            <label for="nome"><strong>Nome</strong></label>
+                            <input
+                                type="text"
+                                placeholder="Seu nome"
+                                required
+                            />
+                        </div>
 
-            <button type="submit">
-                <p>Concluir</p>
-            </button>
+                        <div class="nome" id="grupo_email">
+                            <label for="email"><strong>Email</strong></label>
+                            <input
+                                type="email"
+                                placeholder="Seu email"
+                                required
+                            />
+                        </div>
+                    </div>
 
-        </form>
-    </section>
-</body>
+                    <div class="linha1">
+                        <div class="endereco" id="grupo_endereco">
+                            <label for="endereco"
+                                ><strong>Endereço</strong></label
+                            >
+                            <input
+                                type="text"
+                                placeholder="Seu endereço"
+                                required
+                            />
+                        </div>
+
+                        <div class="endereco" id="grupo_cidade">
+                            <label for="cidade"><strong>Cidade</strong></label>
+                            <input
+                                type="text"
+                                placeholder="Sua cidade"
+                                required
+                            />
+                        </div>
+                    </div>
+
+                    <div class="linha2">
+                        <div class="evento" id="grupo_CEP">
+                            <label for="cep"><strong>CEP</strong></label>
+                            <input type="text" placeholder="Seu CEP" required />
+                        </div>
+
+                        <div class="evento" id="grupo_numero">
+                            <label for="numero"><strong>Número</strong></label>
+                            <input
+                                type="text"
+                                placeholder="Número da residência"
+                                required
+                            />
+                        </div>
+
+                        <div class="evento" id="grupo_telefone">
+                            <label for="telefone"
+                                ><strong>Telefone</strong></label
+                            >
+                            <input
+                                type="text"
+                                placeholder="Telefone para contato"
+                                required
+                            />
+                        </div>
+
+                        <div class="evento" id="grupo_data">
+                            <label for="data"><strong>Data</strong></label>
+                            <input type="date" placeholder="Data" required />
+                        </div>
+
+                        <div class="evento" id="grupo_horario">
+                            <label for="horario"
+                                ><strong>Horário</strong></label
+                            >
+                            <input type="time" placeholder="Hora" required />
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit">
+                    <p>Concluir</p>
+                </button>
+            </form>
+        </section>
+    </body>
 </html>
+
