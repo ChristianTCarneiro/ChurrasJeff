@@ -1,0 +1,74 @@
+body {
+    background-color: #F2F3F5;
+    font-family: 'Bree serif', sans-serif;
+}
+
+.painel h1 {
+    font-weight: 600;
+    font-size: 27px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.painel {
+    background-color: #FFFFFF;
+    margin: 50px 30px 10px 30px;
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid #ADADAD;
+    position: absolute;
+    width: 87%;    
+}
+
+.painel form .user-details {
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+form .user-details {
+    width: 100%;
+}
+
+.user-details input {
+    height: 45px;
+    width: 100%;
+    padding: 0.2rem;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.2);
+    margin: 18px 0 15px 0;
+}
+
+button {
+    background-color: #D76868;
+    
+    height: 40px;
+    width: 130px;
+
+    border-radius: 8px;
+    border: none;
+    box-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.2);
+
+    margin-top: 30px;
+    margin-left: 1000px;
+    margin-bottom: 30px;
+}
+
+button p {
+    font-family: 'Bree serif', sans-serif;
+    font-size: 0.93rem;
+    line-height: 38.02px;
+    color: #FFFFFF;
+    margin: auto;
+}
