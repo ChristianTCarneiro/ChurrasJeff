@@ -5,18 +5,20 @@ body {
 
 .painel h1 {
     font-weight: 600;
-    font-size: 27px;
+    font-size: 30px;
     text-align: center;
     align-items: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .painel {
     background-color: #ffffff;
-    margin: 50px 30px 10px 30px;
+    margin: 30px 30px 30px 30px;
     padding: 50px;
     border-radius: 10px;
     border: 1px solid #adadad;
@@ -24,20 +26,9 @@ body {
     width: 87%;
 }
 
-.painel form .user-details {
-    display: inline-block;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
 #content {
     display: flex;
     flex-direction: column;
-}
-
-form .user-details {
-    width: 100%;
 }
 
 #content > div > div {
@@ -63,8 +54,45 @@ form .user-details {
     padding: 0.2rem;
     border: 1px solid #adadad;
     border-radius: 5px;
-    box-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.2);
+    box-shadow: 1.8px 1.8px 1.8px rgba(0, 0, 0, 0.2);
     margin: 18px 0 15px 0;
+}
+
+.navbar {
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 30px;
+}
+
+.orcamento {
+    margin-right: 30px;
+}
+
+.sobre-nos,
+.orcamento {
+    width: 150px;
+    height: 50px;
+}
+
+.txtnav {
+    font-size: 16px;
+    margin: auto;
+}
+
+.navbar > img {
+    max-width: 250px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
+hr {
+    border-radius: 10px;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    color: #DCDDE0;
 }
 
 button {
@@ -88,4 +116,3 @@ button p {
     color: #ffffff;
     margin: auto;
 }
-
