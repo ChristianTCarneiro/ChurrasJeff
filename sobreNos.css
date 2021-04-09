@@ -1,15 +1,16 @@
 /* Abaixo segue a estilização da página sobre nós */
 body {
     background-color: #f2f3f5;
-    font-family: "Bree serif", sans-serif;
 }
 
 .titulo-pagina{
+    font-family: "Bree serif", sans-serif;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     justify-content: center;
     margin: 60px 30px 60px 30px;
+    font-size: 25px;
 }
 
 .corpo {
@@ -21,6 +22,10 @@ body {
     text-align: justify;
     display: block;
     font-size: 17px;
+}
+
+.todo {
+    margin: 50px auto 90px auto;
 }
 
 .navbar {
@@ -58,6 +63,15 @@ hr {
     justify-content: center;
     margin: 30px;
     color: #DCDDE0;
+}
+
+.corpo h2 {
+    font-family: "Bree serif", sans-serif;
+}
+
+.corpo p,
+.rodape p {
+    font-family: "Inter", sans-serif;
 }
 
 .rodape {
