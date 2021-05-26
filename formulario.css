@@ -44,13 +44,23 @@ body {
 
 .cliente,
 .linha1,
-.linha2 {
+.linha2,
+.linha3 {
     display: flex;
     width: 100%;
 }
 
 .user-details input {
     height: 45px;
+    padding: 0.2rem;
+    border: 1px solid #adadad;
+    border-radius: 5px;
+    box-shadow: 1.8px 1.8px 1.8px rgba(0, 0, 0, 0.2);
+    margin: 18px 0 15px 0;
+}
+
+.user-details select {
+    height: 54px;
     padding: 0.2rem;
     border: 1px solid #adadad;
     border-radius: 5px;
