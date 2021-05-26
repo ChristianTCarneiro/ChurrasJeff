@@ -11,8 +11,21 @@
         />
         <link rel="stylesheet" type="text/css" href="formulario.css" />
         <title>ChurrasJeff</title>
+        <link rel="shortcut icon" href="public/bbq 1.jpg" />
     </head>
     <body>
+        <div class="navbar" id="grupo_navegacao">
+            <img src="public/Logo.png" alt="Logo da empresa ChurrasJeff" title="Logo ChurrasJeff">
+            <button class="sobre-nos">
+                <p class="txtnav">Sobre Nós</p>
+            </button>
+            <button class="orcamento">
+                <p class="txtnav">Orçamento</p>
+            </button>
+        </div>
+
+        <hr>
+
         <section class="painel">
             <div class="cabecalho">
                 <h1>Orçar Evento</h1>
@@ -99,6 +112,34 @@
                             <input type="time" placeholder="Hora" required />
                         </div>
                     </div>
+
+                    <div class="linha3">
+                        <div class="infos" id="grupo_convidados">
+                            <label for="convidados"><strong>Convidados</strong></label>
+                            <input type="number" placeholder="1" required />
+                        </div>
+
+                        <div class="tipo" id="grupo_tipochurras">
+                            <label for="tipochurrasco"><strong>Categoria</strong></label>
+                            <select name="categoria" required>
+                                <option selected disabled value="">Selecione</option>
+                                <option id="cat1">Básico - Apenas preparo do churrasco</option>
+                                <option id="cat2">Intermediário - Preparo do churrasco e serviço</option>
+                                <option id="cat3">Premium - Compra das carnes, preparo do churrasco e serviço</option>
+                            </select>
+                        </div>
+
+                        <div class="duracao" id="grupo_duracao">
+                            <label for="duracaofesta"><strong>Duração da Festa</strong></label>
+                            <select name="duracaofest" required>
+                                <option selected disabled value="">Selecione</option>
+                                <option id="dura2">2 horas</option>
+                                <option id="dura3">3 horas</option>
+                                <option id="dura4">4 horas</option>
+                                <option id="dura5">5 horas</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
 
                 <button type="submit">
@@ -108,4 +149,3 @@
         </section>
     </body>
 </html>
-
