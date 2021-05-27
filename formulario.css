@@ -1,151 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter:wght@300;400;700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" type="text/css" href="formulario.css" />
-        <title>ChurrasJeff</title>
-        <link rel="shortcut icon" href="public/bbq 1.jpg" />
-    </head>
-    <body>
-        <div class="navbar" id="grupo_navegacao">
-            <img src="public/Logo.png" alt="Logo da empresa ChurrasJeff" title="Logo ChurrasJeff">
-            <button class="sobre-nos">
-                <p class="txtnav">Sobre Nós</p>
-            </button>
-            <button class="orcamento">
-                <p class="txtnav">Orçamento</p>
-            </button>
-        </div>
+body {
+    background-color: #f2f3f5;
+    font-family: "Bree serif", sans-serif;
+}
 
-        <hr>
+.painel h1 {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
 
-        <section class="painel">
-            <div class="cabecalho">
-                <h1>Orçar Evento</h1>
-            </div>
-            <form class="formulario">
-                <div class="user-details" id="content">
-                    <div class="cliente">
-                        <div class="nome" id="grupo_nome">
-                            <label for="nome"><strong>Nome</strong></label>
-                            <input
-                                type="text"
-                                placeholder="Seu nome"
-                                required
-                            />
-                        </div>
+.painel {
+    background-color: #ffffff;
+    margin: 30px 30px 30px 30px;
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid #adadad;
+    position: absolute;
+    width: 87%;
+}
 
-                        <div class="nome" id="grupo_email">
-                            <label for="email"><strong>Email</strong></label>
-                            <input
-                                type="email"
-                                placeholder="Seu email"
-                                required
-                            />
-                        </div>
-                    </div>
+#content {
+    display: flex;
+    flex-direction: column;
+}
 
-                    <div class="linha1">
-                        <div class="endereco" id="grupo_endereco">
-                            <label for="endereco"
-                                ><strong>Endereço</strong></label
-                            >
-                            <input
-                                type="text"
-                                placeholder="Seu endereço"
-                                required
-                            />
-                        </div>
+#content > div > div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 1rem;
+}
 
-                        <div class="endereco" id="grupo_cidade">
-                            <label for="cidade"><strong>Cidade</strong></label>
-                            <input
-                                type="text"
-                                placeholder="Sua cidade"
-                                required
-                            />
-                        </div>
-                    </div>
+#content > div > div:last-child {
+    margin-right: 0;
+}
 
-                    <div class="linha2">
-                        <div class="evento" id="grupo_CEP">
-                            <label for="cep"><strong>CEP</strong></label>
-                            <input type="text" placeholder="Seu CEP" required />
-                        </div>
+.cliente,
+.linha1,
+.linha2,
+.linha3 {
+    display: flex;
+    width: 100%;
+}
 
-                        <div class="evento" id="grupo_numero">
-                            <label for="numero"><strong>Número</strong></label>
-                            <input
-                                type="text"
-                                placeholder="Número da residência"
-                                required
-                            />
-                        </div>
+.user-details input {
+    height: 45px;
+    padding: 0.2rem;
+    border: 1px solid #adadad;
+    border-radius: 5px;
+    box-shadow: 1.8px 1.8px 1.8px rgba(0, 0, 0, 0.2);
+    margin: 18px 0 15px 0;
+}
 
-                        <div class="evento" id="grupo_telefone">
-                            <label for="telefone"
-                                ><strong>Telefone</strong></label
-                            >
-                            <input
-                                type="text"
-                                placeholder="Telefone para contato"
-                                required
-                            />
-                        </div>
+.user-details select {
+    height: 54px;
+    padding: 0.2rem;
+    border: 1px solid #adadad;
+    border-radius: 5px;
+    box-shadow: 1.8px 1.8px 1.8px rgba(0, 0, 0, 0.2);
+    margin: 18px 0 15px 0;
+}
 
-                        <div class="evento" id="grupo_data">
-                            <label for="data"><strong>Data</strong></label>
-                            <input type="date" placeholder="Data" required />
-                        </div>
+#grupo_tipochurras {
+    width: 150px;
+}
 
-                        <div class="evento" id="grupo_horario">
-                            <label for="horario"
-                                ><strong>Horário</strong></label
-                            >
-                            <input type="time" placeholder="Hora" required />
-                        </div>
-                    </div>
+.navbar {
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 30px;
+}
 
-                    <div class="linha3">
-                        <div class="infos" id="grupo_convidados">
-                            <label for="convidados"><strong>Convidados</strong></label>
-                            <input type="number" placeholder="1" required />
-                        </div>
+.orcamento {
+    margin-right: 30px;
+}
 
-                        <div class="tipo" id="grupo_tipochurras">
-                            <label for="tipochurrasco"><strong>Categoria</strong></label>
-                            <select name="categoria" required>
-                                <option selected disabled value="">Selecione</option>
-                                <option id="cat1">Categoria 1</option>
-                                <option id="cat2">Categoria 2</option>
-                                <option id="cat3">Categoria 3</option>
-                            </select>
-                        </div>
+.sobre-nos,
+.orcamento {
+    width: 150px;
+    height: 50px;
+}
 
-                        <div class="duracao" id="grupo_duracao">
-                            <label for="duracaofesta"><strong>Duração da Festa</strong></label>
-                            <select name="duracaofest" required>
-                                <option selected disabled value="">Selecione</option>
-                                <option id="dura2">2 horas</option>
-                                <option id="dura3">3 horas</option>
-                                <option id="dura4">4 horas</option>
-                                <option id="dura5">5 horas</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
+.navbar > a > img {
+    max-width: 250px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
 
-                <button type="submit">
-                    <p>Concluir</p>
-                </button>
-            </form>
-        </section>
-    </body>
-</html>
+hr {
+    border-radius: 10px;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    color: #DCDDE0;
+}
+
+button {
+    background-color: #d76868;
+
+    height: 40px;
+    width: 130px;
+
+    border-radius: 8px;
+    border: none;
+    box-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.2);
+
+    margin: 30px 0;
+    float: right;
+}
+
+button p {
+    font-family: "Bree serif", sans-serif;
+    font-size: 0.97rem;
+    line-height: 38.02px;
+    color: #ffffff;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Bree serif", sans-serif;
+    font-size: 0.97rem;
+    line-height: 38.02px;
+    color: #ffffff;
+    margin: auto;
+}
