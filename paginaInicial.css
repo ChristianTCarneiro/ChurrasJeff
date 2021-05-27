@@ -19,12 +19,7 @@ body {
     height: 50px;
 }
 
-.txtnav {
-    font-size: 16px;
-    margin: auto;
-}
-
-.navbar > img {
+.navbar > a > img {
     max-width: 250px;
     max-height: 200px;
     width: auto;
@@ -106,7 +101,16 @@ button {
 
 button p {
     font-family: "Bree serif", sans-serif;
-    font-size: 0.93rem;
+    font-size: 0.97rem;
+    line-height: 38.02px;
+    color: #ffffff;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Bree serif", sans-serif;
+    font-size: 0.97rem;
     line-height: 38.02px;
     color: #ffffff;
     margin: auto;
