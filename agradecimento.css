@@ -1,0 +1,115 @@
+body {
+    background-color: #f2f3f5;
+    font-family: "Bree serif", sans-serif;
+}
+
+.navbar {
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 30px;
+}
+
+.orcamento {
+    margin-right: 30px;
+}
+
+.sobre-nos,
+.orcamento {
+    width: 150px;
+    height: 50px;
+}
+
+.navbar > a > img {
+    max-width: 250px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
+hr {
+    border-radius: 10px;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    color: #DCDDE0;
+}
+
+button {
+    background-color: #d76868;
+
+    height: 40px;
+    width: 130px;
+
+    border-radius: 8px;
+    border: none;
+    box-shadow: 1.8px 1.8px 1.8px rgba(0, 0, 0, 0.2);
+
+    margin: 30px 0;
+    float: right;
+}
+
+button p {
+    font-family: "Bree serif", sans-serif;
+    font-size: 0.97rem;
+    line-height: 38.02px;
+    color: #ffffff;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Bree serif", sans-serif;
+    font-size: 0.97rem;
+    line-height: 38.02px;
+    color: #ffffff;
+    margin: auto;
+}
+
+.obrigado h2 {
+    font-family: "Bree serif", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.obrigado p{
+    font-family: "Bree serif", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+.obrigado > p > a {
+    text-decoration: none;
+    color: black;
+    font-family: "Bree serif", sans-serif;
+    font-size: 20px;
+}
+
+.obrigado a:hover {
+    color:#d76868;
+    transition: 0.2s;
+}
+
+.obrigado {
+    font-family: "Bree serif", sans-serif;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 65px;
+    padding: 50px;
+    padding-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #adadad;
+    width: 430px;
+    height: 300px;
+    box-shadow: 1.8px 1.8px 1.8px rgba(0, 0, 0, 0.2);
+}
