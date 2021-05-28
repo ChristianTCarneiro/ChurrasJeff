@@ -35,7 +35,7 @@ hr {
     color: #DCDDE0;
 }
 
-.content {
+/* .content {
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -83,6 +83,34 @@ hr {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+} */
+
+#corpo {
+    display: grid;
+    place-items: center;
+
+    margin-top: 20vh;
+}
+
+#items-wrapper {
+    /* margin-left: 150px;
+    align-items: center; */
+    width: 40vw;
+}
+
+
+#items {
+    display: flex;
+    overflow-x: auto;
+}
+
+.item {
+    flex: none;
+}
+
+img {
+    height: 300px;
+    width: 497px;
 }
 
 button {
