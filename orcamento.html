@@ -30,7 +30,8 @@
             <div class="cabecalho">
                 <h1>Orçar Evento</h1>
             </div>
-            <form class="formulario">
+            <form class="formulario" action="https://api.staticforms.xyz/submit" method="post">
+                <input type="hidden" name="accessKey" value="5665090f-1a4d-4edf-9a5d-0d91f2d929bc">
                 <div class="user-details" id="content">
                     <div class="cliente">
                         <div class="nome" id="grupo_nome">
@@ -38,6 +39,7 @@
                             <input
                                 type="text"
                                 placeholder="Seu nome"
+                                name="$Seu nome"
                                 required
                             />
                         </div>
@@ -47,6 +49,7 @@
                             <input
                                 type="email"
                                 placeholder="Seu email"
+                                name="$Seu email"
                                 required
                             />
                         </div>
@@ -60,6 +63,7 @@
                             <input
                                 type="text"
                                 placeholder="Seu endereço"
+                                name="$Seu endereço"
                                 required
                             />
                         </div>
@@ -69,6 +73,7 @@
                             <input
                                 type="text"
                                 placeholder="Sua cidade"
+                                name="$Sua cidade"
                                 required
                             />
                         </div>
@@ -77,7 +82,10 @@
                     <div class="linha2">
                         <div class="evento" id="grupo_CEP">
                             <label for="cep"><strong>CEP</strong></label>
-                            <input type="text" placeholder="Seu CEP" required />
+                            <input type="text" 
+                            placeholder="Seu CEP"
+                            name="$Seu CEP"
+                            required />
                         </div>
 
                         <div class="evento" id="grupo_numero">
@@ -85,6 +93,7 @@
                             <input
                                 type="text"
                                 placeholder="Número da residência"
+                                name="$Número da residência"
                                 required
                             />
                         </div>
@@ -96,32 +105,48 @@
                             <input
                                 type="text"
                                 placeholder="Telefone para contato"
+                                name="$Telefone para contato"
                                 required
                             />
                         </div>
 
                         <div class="evento" id="grupo_data">
                             <label for="data"><strong>Data</strong></label>
-                            <input type="date" placeholder="Data" required />
+                            <input 
+                                type="date"
+                                placeholder="Data"
+                                name="$Data"
+                                required 
+                            />
                         </div>
 
                         <div class="evento" id="grupo_horario">
                             <label for="horario"
                                 ><strong>Horário</strong></label
                             >
-                            <input type="time" placeholder="Hora" required />
+                            <input 
+                                type="time" 
+                                placeholder="Hora" 
+                                name="$Hora"
+                                required 
+                            />
                         </div>
                     </div>
 
                     <div class="linha3">
                         <div class="infos" id="grupo_convidados">
                             <label for="convidados"><strong>Convidados</strong></label>
-                            <input type="number" placeholder="1" required />
+                            <input 
+                                type="number" 
+                                placeholder="1" 
+                                name="$Convidados"
+                                required 
+                            />
                         </div>
 
                         <div class="tipo" id="grupo_tipochurras">
                             <label for="tipochurrasco"><strong>Categoria</strong></label>
-                            <select name="categoria" required>
+                            <select name="categoria" name="$Categoria" required>
                                 <option selected disabled value="">Selecione</option>
                                 <option id="cat1">Básico - Apenas preparo do churrasco</option>
                                 <option id="cat2">Intermediário - Preparo do churrasco e serviço</option>
@@ -131,7 +156,7 @@
 
                         <div class="duracao" id="grupo_duracao">
                             <label for="duracaofesta"><strong>Duração da Festa</strong></label>
-                            <select name="duracaofest" required>
+                            <select name="duracaofest" name="$Duração da festa" required>
                                 <option selected disabled value="">Selecione</option>
                                 <option id="dura2">2 horas</option>
                                 <option id="dura3">3 horas</option>
